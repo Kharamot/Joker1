@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func answerTapped(_ sender: Any) {
+        punchLine.isHidden = !punchLine.isHidden
+    }
 
+    @IBOutlet weak var answerOutlet: UIButton!
+    @IBOutlet weak var punchLine: UILabel!
 }
 
